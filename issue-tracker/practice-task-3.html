@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-task-3</title>
+    <style>
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="contact-form">
+        <div>
+            Name: <input type="text" id="name">
+            <button id="deleteName" onclick="deleteName()">Delete Name</button>
+            <button id="sendName" onclick="SendName()">Send Name</button>
+        </div>
+        <div>
+            email: <input type="text" id="email">
+            <button id="deleteEmail" onclick="deleteToEmail()">Delete Email</button>
+            <button id="sendEmail" onclick="SendEmail()">Send Email</button>
+        </div>
+        <div>
+            message: <textarea type="text" id="message"></textarea>
+            <button id="deleteMsg" onclick="deleteMsg()">Delete Message</button>
+            <button id="sendMsg" onclick="SendMsg()">Send Message</button>
+        </div>
+
+
+        <button id="sendAll" onclick="sendAll()">Send</button>
+        <button id="reset" onclick="reset()">Reset</button>
+
+    </div>
+    <script src="practice-task-3.js">
+    </script>
+</body>
+</html>

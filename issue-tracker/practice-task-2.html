@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Task 2</title>
+  </head>
+  <body>
+    <p id="showCount">0</p>
+    <button id="showbtn" onclick="addLocalStorage()">Add</button>
+
+    <script>
+      const p = document.getElementById("showCount").innerText;
+      // console.log(typeof(pVal));
+      const addLocalStorage = () => {
+          var count = Number(window.localStorage.getItem("count"));
+          count += 1;
+          window.localStorage.setItem("count", count);
+          document.getElementById("showCount").innerText = count;
+      };
+    </script>
+  </body>
+</html>
